@@ -17,6 +17,10 @@
 .active {
     text-decoration: underline;
 }
+/* Ou pode usar apenas o atributo aria-current que o NavLink já coloca */
+.link[aria-current="page"] {
+    text-decoration: underline;
+}
 
 @media (min-width: 744px) {
     .navegation {

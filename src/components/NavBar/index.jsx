@@ -2,23 +2,17 @@ import { NavLink } from "react-router-dom";
 import styles from "./NavBar.module.css";
 
 const NavBar = () => {
+  // Evita duplicação de código
+  const getLinkClassName = ({ isActive }) =>
+    isActive ? `${styles.link} ${styles.active}` : styles.link;
+
   return (
     <header className={styles.header}>
       <nav className={styles.navegation}>
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            isActive ? `${styles.link} ${styles.active}` : styles.link
-          }
-        >
+        <NavLink to="/" className={getLinkClassName}>
           Início
         </NavLink>
-        <NavLink
-          to="/sobre-mim"
-          className={({ isActive }) =>
-            isActive ? `${styles.link} ${styles.active}` : styles.link
-          }
-        >
+        <NavLink to="/sobre-mim" className={getLinkClassName}>
           Sobre Mim
         </NavLink>
       </nav>
