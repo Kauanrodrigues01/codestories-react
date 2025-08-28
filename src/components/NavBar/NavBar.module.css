@@ -1,0 +1,21 @@
+.navegation {
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: var(--spacing-xl);
+}
+
+.link {
+    color: var(--color-secondary);
+    text-align: center;
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-md);
+    text-decoration: none;
+}
+
+@media (min-width: 744px) {
+    .navegation {
+        height: 112px;
+    }
+}
