@@ -1,6 +1,7 @@
 import styles from "./Banner.module.css";
 import coloredCircle from "@/assets/coloredCircle.png";
-import myPhoto from "@/assets/myPhoto.png"
+import myPhoto from "@/assets/myPhoto.png";
+import LinkButton from "../LinkButton";
 
 const Banner = () => {
   return (
@@ -14,7 +15,11 @@ const Banner = () => {
         </p>
       </div>
 
-      <button className={styles.button}>Explorar</button>
+      <div className={styles.wrapperButton}>
+        <LinkButton as="link" to="/" size="large">
+          Explorar
+        </LinkButton>
+      </div>
 
       <div className={styles.images}>
         <img
