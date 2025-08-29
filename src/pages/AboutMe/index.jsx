@@ -1,9 +1,5 @@
-import React from 'react'
-
 const AboutMe = () => {
-  return (
-    <div>About Me</div>
-  )
-}
+  return <h1>Sobre mim...</h1>;
+};
 
-export default AboutMe
+export default AboutMe;

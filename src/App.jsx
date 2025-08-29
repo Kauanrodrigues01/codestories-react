@@ -1,12 +1,12 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Home from "./pages/Home"
-import AboutMe from "./pages/AboutMe"
-import NotFound from "./pages/NotFound"
-import NavBar from "./components/NavBar"
-import Footer from "./components/Footer"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
+import MainLayout from "./components/MainLayout";
+import NavBar from "./components/NavBar";
+import AboutMe from "./pages/AboutMe";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
 
 function App() {
-
   return (
     <>
       <BrowserRouter>
@@ -14,15 +14,21 @@ function App() {
         <NavBar />
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sobre-mim" element={<AboutMe />} />
+          {/* Rota pai que contém o layout com Banner */}
+          <Route path="/" element={<MainLayout />}>
+            {/* Rotas filhas que serão renderizadas no Outlet */}
+            <Route index element={<Home />} />
+            <Route path="sobre-mim" element={<AboutMe />} />
+          </Route>
+
+          {/* Rota fora do layout principal (sem Banner) */}
           <Route path="*" element={<NotFound />} />
         </Routes>
 
         <Footer />
       </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
