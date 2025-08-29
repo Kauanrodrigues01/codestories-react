@@ -1,0 +1,52 @@
+.aboutMePhoto {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 2rem;
+    display: block;
+}
+
+.caption {
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.paragraph {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 745px) {
+    .aboutMePhoto {
+        width: 70vw;
+        max-width: 500px;
+    }
+
+    .paragraph {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1101px) {
+    .aboutMePhoto {
+        float: right;
+        width: 40vw;
+        margin-left: 1.5rem;
+        margin-bottom: .5rem;
+        max-width: 500px;
+    }
+
+    .caption {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .paragraph {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+}

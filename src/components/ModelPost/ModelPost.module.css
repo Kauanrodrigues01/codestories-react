@@ -1,0 +1,63 @@
+.modelPostContainer {
+    position: relative;
+    color: var(--color-gray);
+}
+
+.coverPhoto, .title {
+    height: 100px;
+}
+
+.coverPhoto {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-2lg);
+    font-weight: var(--font-weight-bold);
+    padding: 0 var(--spacing-md);
+}
+
+.postContentContainer {
+    margin: var(--spacing-xl) auto var(--spacing-xl);
+    padding: 0 var(--spacing-md);
+    width: 100%;
+    max-width: 1200px;
+}
+
+@media (min-width: 744px) {
+    .coverPhoto, .title {
+        height: 130px;
+    }
+
+    .title {
+        font-size: var(--font-size-xl);
+    }
+
+    .postContentContainer {
+        padding: 0 var(--spacing-lg);
+        margin: var(--spacing-3xl) auto var(--spacing-3xl);
+    }
+}
+
+@media (min-width: 1440px) {
+    .coverPhoto, .title {
+        height: 200px;
+    }
+
+    .title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .postContentContainer {
+        margin: var(--spacing-2xl) auto var(--spacing-2xl);
+    }
+}

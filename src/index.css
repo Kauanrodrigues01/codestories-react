@@ -17,8 +17,10 @@
 	--font-size-sm: 1.125rem; /* 18px */
 	--font-size-md: 1.25rem;  /* 20px */
 	--font-size-lg: 1.5rem;   /* 24px */
+	--font-size-2lg: 1.75rem; /* 28px */
 	--font-size-xl: 2.5rem;   /* 40px */
-	--font-size-2xl: 4rem;    /* 64px */
+	--font-size-2xl: 3.5rem;  /* 56px */
+	--font-size-3xl: 4rem;    /* 64px */
 
 
 	/* Pesos de Fonte */
@@ -39,6 +41,8 @@
 	--spacing-md: 1rem;      /* 16px */
 	--spacing-lg: 1.5rem;    /* 24px */
 	--spacing-xl: 2rem;      /* 32px */
+	--spacing-2xl: 2.5rem;   /* 40px */
+	--spacing-3xl: 4.5rem;   /* 72px */
 
 	/* Border Radius */
 	--border-radius-xs: 0.3rem;   /* 5px */

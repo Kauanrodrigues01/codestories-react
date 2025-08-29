@@ -10,7 +10,7 @@
 .title {
     color: var(--color-white);
     font-family: var(--font-family-primary);
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-3xl);
     font-weight: var(--font-weight-bold);
     line-height: 80px;
     margin-bottom: var(--spacing-xl);
