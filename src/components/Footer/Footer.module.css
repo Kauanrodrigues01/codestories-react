@@ -1,0 +1,10 @@
+.footer {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    font-family: var(--font-family-secondary);
+    padding: 33px 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

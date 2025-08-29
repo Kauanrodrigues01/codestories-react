@@ -3,6 +3,7 @@ import Home from "./pages/Home"
 import AboutMe from "./pages/AboutMe"
 import NotFound from "./pages/NotFound"
 import NavBar from "./components/NavBar"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
           <Route path="/sobre-mim" element={<AboutMe />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+
+        <Footer />
       </BrowserRouter>
     </>
   )
