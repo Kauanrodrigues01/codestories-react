@@ -23,11 +23,11 @@
 
 /* Tamanhos */
 .linkButtonSmall {
-  padding: 10px 20px;
+  padding: 11px 25px;
   font-size: var(--font-size-sm);
 }
 
 .linkButtonLarge {
-  padding: 20px 35px;
+  padding: 24px 50px;
   font-size: var(--font-size-md);
 }
