@@ -1,8 +1,11 @@
 import LinkButton from "@/components/LinkButton";
-import erro404 from '@/assets/erro_404.png'
+import erro404 from "@/assets/erro_404.png";
 import styles from "./NotFound.module.css";
+import { useNavigate } from "react-router-dom";
 
 const NotFound = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className={styles.container}>
@@ -11,12 +14,16 @@ const NotFound = () => {
         <h1 className={styles.title}>Ops! Página não encontrada.</h1>
 
         <p className={styles.description}>
-          Tem certeza que era isso que você estava procurando? Aguarde uns instantes e recarregue a página, ou volte para a página
-          inicial.
+          Tem certeza que era isso que você estava procurando? Aguarde uns
+          instantes e recarregue a página, ou volte para a página inicial.
         </p>
 
         <div className={styles.actions}>
-          <LinkButton as="link" to="/" size="large">
+          <LinkButton
+            as="button"
+            size="large"
+            onClick={() => navigate(-1)}
+          >
             Voltar
           </LinkButton>
         </div>
