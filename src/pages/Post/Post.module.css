@@ -53,17 +53,9 @@
 .postMarkdownContainer blockquote {
   overflow-x: auto;
   margin-bottom: var(--spacing-lg);
-  padding: 1rem;
+  padding: var(--spacing-md);
   background-color: var(--color-light-gray);
-  border-radius: 5px;
-}
-
-.notFound {
-  text-align: center;
-  font-family: var(--font-family-primary);
-  font-size: var(--font-size-2lg);
-  color: #000;
-  margin: var(--spacing-xl) 0;
+  border-radius: var(--border-radius-xs);
 }
 
 @media (min-width: 744px) {
