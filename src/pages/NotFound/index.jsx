@@ -1,10 +1,20 @@
-import LinkButton from "@/components/LinkButton";
 import erro404 from "@/assets/erro_404.png";
-import styles from "./NotFound.module.css";
+import LinkButton from "@/components/LinkButton";
 import { useNavigate } from "react-router-dom";
+import styles from "./NotFound.module.css";
 
 const NotFound = () => {
   const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    // Verifica se há histórico suficiente para voltar
+    if (window.history.length > 1) {
+      navigate(-1);
+    } else {
+      // Se não há histórico, vai para a home
+      navigate("/");
+    }
+  };
 
   return (
     <>
@@ -19,11 +29,7 @@ const NotFound = () => {
         </p>
 
         <div className={styles.actions}>
-          <LinkButton
-            as="button"
-            size="large"
-            onClick={() => navigate(-1)}
-          >
+          <LinkButton as="button" size="large" onClick={handleGoBack}>
             Voltar
           </LinkButton>
         </div>

@@ -65,4 +65,8 @@
     width: 70%;
     margin-bottom: -17rem;
   }
+
+  .blank {
+    height: 260px;
+  }
 }
