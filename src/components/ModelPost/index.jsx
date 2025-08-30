@@ -13,12 +13,12 @@ const ModelPost = ({ children, coverPhoto, title, recommendPosts }) => {
 
       <div className={styles.postContentContainer}>{children}</div>
 
-      <div className={styles.recommendPosts}>
+      {recommendPosts ? (<div className={styles.recommendPosts}>
         <h4 className={styles.recommendPostsTitle}>
           Outros Posts que você pode gostar:
         </h4>
         <PostsList posts={recommendPosts} />
-      </div>
+      </div>) : ""}
     </article>
   );
 };
