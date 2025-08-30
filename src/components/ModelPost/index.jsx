@@ -1,7 +1,6 @@
 import styles from "./ModelPost.module.css";
 
 const ModelPost = ({ children, coverPhoto, title }) => {
-  console.log(coverPhoto);
   return (
     <article className={styles.modelPostContainer}>
       <div

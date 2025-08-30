@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import AboutMe from "./pages/AboutMe";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import Post from "./pages/Post";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             {/* Rotas filhas que serão renderizadas no Outlet */}
             <Route index element={<Home />} />
             <Route path="sobre-mim" element={<AboutMe />} />
+            <Route path="posts/:id" element={<Post />} />
           </Route>
 
           {/* Rota fora do layout principal (sem Banner) */}
